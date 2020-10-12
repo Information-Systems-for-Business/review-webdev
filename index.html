@@ -1,10 +1,55 @@
-<html>
-    <head>
-        <title>Material Icons</title>
-    </head>
-    <body>
-        <i class="material-icons icon-image-preview">face</i>
-        <i class="material-icons">admin_panel_settings</i>
-        <link href="assets/css/material.css" rel="stylesheet">
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Belajar jQuery & Bootstrap</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>My Second Jumbotron</h1>
+            <p>Resize this responsive page to see the effect!</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div>
+    </div>
+    <button id='tes'>Tes</button>
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <script src='assets/js/jquery-3.5.1.js'></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //1. tampung nilai variabel
+            buttonTes = $('#tes');
+            //2. ubah text "Tes" menjadi "Berhasil di-klik" ketika button #tes ditekan
+            buttonTes.on('click',function(){
+                buttonTes.html("Berhasil di-klik");
+            }); 
+        });
+    </script>
+</body>
 </html>
